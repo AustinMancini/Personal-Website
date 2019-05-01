@@ -1,0 +1,58 @@
+.row {
+    max-width: $grid-width; // This will determine the width of our grid
+    margin: 0 auto; //This will center block elements inside another block element
+
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical; // This gives a margin to every element BUT the last child
+    }
+
+    @include clearfix; // Calls the clearfix we definded in our mixins file
+
+    //Defines where all the class attributes start will "col-" aka selects all the columns at the same time.
+    [class^="col-"] {
+        float: left; //Floats columns to the left side since we are doing a float layout
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal; // This gives a margin to every element BUT the last child
+        }
+    }
+
+    //Takes the width and subtracts the gutter, then divides it into 2 pieces.
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+    }
+
+
+    .col-full {
+        width: 100%;
+    }
+
+
+    //Takes the width and subtracts the 2 * the gutter-horizontal, then divides it into 3 pieces. *Theree separte columns*
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    }
+
+    //Multiplies 2 * the width, then subracts 2 * the gutter-horizontal, then divides by 3, and adds by gutter-horizontal
+    .col-2-of-3 {
+        width: calc(2* ((100% - 2 * #{$gutter-horizontal}))/ 3 + #{$gutter-horizontal});
+    }
+
+    //Takes the width and subtracts the 3 * the gutter-horizonatl, then divides it into 4 pieces.
+    .col-1-of-4 {
+        width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+    }
+
+    // Combines 2 columns with a gutter, making 2 columns together.
+    .col-2-of-4 {
+        width: calc(2* ((100% - 3 * #{$gutter-horizontal}))/ 4 + #{$gutter-horizontal});
+    }
+
+
+    // Creates a 3 combined row into 1 with 2 gutters combined.
+    .col-3-of-4 {
+        width: calc(3* ((100% - 3 * #{$gutter-horizontal}))/ 4 + (2 *#{$gutter-horizontal}));
+    }
+
+}
+

@@ -1,0 +1,55 @@
+.composition{
+position: relative; // set to relative because it is parent of __photo
+
+    &__photo{
+        width: 18.5%;
+        // box-shadow: 0 1.5rem 4rem rgba($color-black, .4);// x, y and blur
+      
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem; // creates the space between green border and img
+
+        &--p1{  // these values move the img up, down, left or right
+            left:5rem;
+            top: -0rem;
+        }
+
+        &--p2{
+            right: 7rem;
+            top: 0rem;
+        }
+
+        &--p3{
+            left: 4.5rem;
+            top: 15rem;
+        }
+
+        &--p4{
+            right: 6rem;
+            top:15rem;
+        }
+
+         &--p5{
+            right: 23.5rem;
+            top:0;
+        }
+
+          &--p6{
+            right: 23.5rem;
+            top:15rem;
+        }
+
+        &:hover{ // use for hover affect of each photo
+            //green outline for each hovered img
+            transform: scale(1.09);
+   
+            z-index: 20; // brings img forward with higher index value than parent
+       
+        }
+    }
+
+    // &:hover &__photo:not(:hover){ //selects the img's not hovered and makes them smaller
+    //     transform: scale(.95)
+    // }
+}
