@@ -1,14 +1,11 @@
-.composition{
+.composition{ // spacing, hover effects, and border color for icons in "My Work" section
 position: relative; // set to relative because it is parent of __photo
 
     &__photo{
         width: 18.5%;
-        // box-shadow: 0 1.5rem 4rem rgba($color-black, .4);// x, y and blur
-      
         position: absolute;
         z-index: 10;
         transition: all .2s;
-        outline-offset: 2rem; // creates the space between green border and img
 
         &--p1{  // these values move the img up, down, left or right
             left:5rem;
@@ -43,7 +40,6 @@ position: relative; // set to relative because it is parent of __photo
         &:hover{ // use for hover affect of each photo
             //green outline for each hovered img
             transform: scale(1.09);
-   
             z-index: 20; // brings img forward with higher index value than parent
        
         }
