@@ -1,9 +1,14 @@
-.section-my-work{
-    background-color: $color-grey-lightest;
-    padding:10rem 0;
+.section-my-work {
+  background-color: $color-grey-very-light;
+  padding: 10rem 0;
+
+  @include respond(tab-port) {
+    padding-bottom: 25rem;
+    margin-bottom: 0;
+  }
 }
 
-// space between My Work section on the bottom padding
-.section-my-work .row{ 
-    padding-bottom: 10rem;
+.section-my-work .row {
+  // space between My Work section on the bottom padding
+  padding-bottom: 8rem;
 }

@@ -1,96 +1,95 @@
 /* Header */
 #header {
-    color: $color-grey-white;
-    cursor: default;
-    font-size: 1.25rem;
-    left: 0;
-    text-transform: uppercase;
-    top: 0;
-    width: 100%;
-    z-index: 10001;
+  color: $color-grey-white;
+  cursor: default;
+  font-size: 1.25rem;
+  left: 0;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+  z-index: 10001;
 }
 
 #header h1 {
-    margin: 0;
-    padding: 0;
-    position: absolute;
+  margin: 0;
+  padding: 0;
+  position: absolute;
 }
 
 #header.alt h1 a:hover {
-    color: $color-grey-lightest;
-    text-shadow: 90%;
+  color: $color-grey-lightest;
+  text-shadow: 90%;
 }
 
 #header nav {
-    position: absolute;
-    vertical-align: middle;
+  position: absolute;
+  vertical-align: middle;
 }
 
 #header nav ul {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 #header nav ul li {
-    border-radius: 4px;
-    display: inline-block;
-    margin-left: 4rem;
-    padding-left: 0;
+  border-radius: 4px;
+  display: inline-block;
+  margin-left: 4rem;
+  padding-left: 0;
 }
 
 #header nav ul li a {
-    display: inline-block;
-    text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
 }
 
 #header nav ul li a:hover {
-    color: $color-grey-white;
+  color: $color-grey-white;
 }
 
 #header.alt {
-    background-color: transparent;
-    border: 0;
-    box-shadow: none;
-    height: 6rem;
-    line-height: 3.25rem;
-    position: absolute;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  height: 6rem;
+  line-height: 3.25rem;
+  position: absolute;
 }
 
 #header.alt h1 {
-    left: 5rem;
-    top: 5.2rem;
+  left: 5rem;
+  top: 5.2rem;
 }
 
 #header.alt h1 a {
-    color: $color-white;
-    font-size: 1.8rem
+  color: $color-white;
+  font-size: 1.8rem;
 }
 
 #header.alt nav {
-    right: 6rem;
-    top: 5.2rem;
+  right: 6rem;
+  top: 5.2rem;
 }
 
 #header.alt nav a {
-    color: $color-grey-lightest;
-    font-size: 1.8rem;
+  color: $color-grey-lightest;
+  font-size: 1.8rem;
 }
 
 #header.alt nav a:active,
 #header.alt nav a:hover {
-    color: $color-white;
+  color: $color-white;
 }
 
+// @media screen and (max-width: 980px) {
+//   #header nav a {
+//     padding: 5%;
+//   }
+// }
 
-@media screen and (max-width: 980px) {
-    #header nav a{
-     padding: 5%;
-}
-}
-
-@media screen and (max-width: 1280px) {
-    #header nav a {
-        padding: 0;
-    }
-}
+// @media screen and (max-width: 1280px) {
+//   #header nav a {
+//     padding: 0;
+//   }
+// }

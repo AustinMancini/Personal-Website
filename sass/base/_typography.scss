@@ -1,20 +1,5 @@
-html {
-  font-size: 62.5%;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
-  border: 0;
-  margin: 0;
-}
-
-// About Section
-.heading-secondary {
+// About Section font
+.about-column-initial h1 {
   font-size: 4.8rem;
   text-transform: uppercase;
   display: inline-block;
@@ -22,7 +7,7 @@ body {
   margin-bottom: 0;
 }
 
-.paragraph-title {
+.about-column-initial p {
   font-size: 2.5rem;
   width: 40rem;
   text-transform: uppercase;
@@ -30,35 +15,46 @@ body {
   color: $color-grey-white;
   line-height: 1.5em;
   margin-top: 1.2rem;
+
+  @include respond(tab-port) {
+    font-size: 3.5rem;
+  }
 }
 
-.paragraph-info {
+.about-column-secondary p {
   font-size: $default-font-size;
   width: 40rem;
   display: inline-block;
   color: $color-black;
   line-height: 3rem;
+
+  @include respond(tab-port) {
+    font-size: 1.95rem;
+    margin-bottom: 0;
+  }
 }
 
 .about-column-initial {
-  margin: 11rem 0 14rem 14rem;
+  margin: 11rem 0 7rem 14rem;
+
+  @include respond(tab-port) {
+    margin: 0 auto;
+    margin-top: 5.5rem;
+    margin-left: 5rem;
+  }
 }
 
 .about-column-secondary {
   margin: 11rem 14rem 0 0;
+
+  @include respond(tab-port) {
+    margin: 0 auto;
+    margin-left: 5rem;
+  }
 }
 
-// My Work Section
-.my-work-heading {
-  font-size: 4rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.45rem;
-  padding-bottom: 3.5rem;
-  color: $color-black;
-}
-
-.work-paragraph {
+// My Work Section font
+.section-my-work p {
   font-size: $default-font-size;
   line-height: 2.5;
   padding-bottom: 4rem;
@@ -66,18 +62,45 @@ body {
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
+
+  @include respond(tab-port) {
+    margin-bottom: 0;
+    padding-bottom: 4rem;
+    font-size: 1.95rem;
+  }
 }
 
-.work-h3{
-    font-size: 2rem;
+.section-my-work h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.45rem;
+  padding-bottom: 3.5rem;
+  color: $color-black;
+  margin-top: 0;
+
+  @include respond(tab-port) {
+    padding-bottom: 0;
+    margin-bottom: 3rem;
+  }
 }
 
-.work-list{
-font-size: 1.6rem;
-padding-left: 2rem;
-line-height: 1.5;
+.section-my-work h3 {
+  font-size: 2rem;
+
+  @include respond(tab-port) {
+    margin-left: 13.5rem;
+    font-size: 2.5rem;
+  }
 }
 
-.icons-list{
-    font-size: 4rem;
+.section-my-work ul {
+  font-size: 1.6rem;
+  padding-left: 2rem;
+  line-height: 1.5;
+
+  @include respond(tab-port) {
+    margin-left: 13.5rem;
+    font-size: 1.9rem;
+  }
 }
