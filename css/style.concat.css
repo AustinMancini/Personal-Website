@@ -120,7 +120,7 @@ body {
     .about-column-secondary p {
       width: 35rem;
       text-align: left;
-      font-size: 2rem; } }
+      font-size: 2.25rem; } }
 
 .about-column-initial {
   margin: 11rem 0 7rem 14rem; }
@@ -143,8 +143,9 @@ body {
       font-size: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-my-work p {
-      width: 30rem;
-      margin: 0 auto; } }
+      width: 40rem;
+      margin: 0 auto;
+      font-size: 2.15rem; } }
 
 .section-my-work h1 {
   font-size: 4rem;
@@ -160,7 +161,7 @@ body {
       margin-bottom: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-my-work h1 {
-      padding-left: 7.56rem; } }
+      padding-left: 3.5rem; } }
 
 .section-my-work h3 {
   font-size: 2rem; }
@@ -259,7 +260,7 @@ body {
       top: -0rem; }
       @media only screen and (max-width: 37.5em) {
         .composition__photo--p1 {
-          left: 6rem;
+          left: 5rem;
           top: 0rem; } }
     .composition__photo--p2 {
       right: 7rem;
@@ -273,7 +274,7 @@ body {
       top: 15rem; }
       @media only screen and (max-width: 37.5em) {
         .composition__photo--p3 {
-          left: 5.8rem; } }
+          left: 4.9rem; } }
     .composition__photo--p4 {
       right: 6rem;
       top: 15rem; }
@@ -285,13 +286,13 @@ body {
       top: 0; }
       @media only screen and (max-width: 37.5em) {
         .composition__photo--p5 {
-          right: 18.45rem; } }
+          right: 19rem; } }
     .composition__photo--p6 {
       right: 23.5rem;
       top: 15rem; }
       @media only screen and (max-width: 37.5em) {
         .composition__photo--p6 {
-          right: 18.5rem; } }
+          right: 19.5rem; } }
     .composition__photo:hover {
       transform: scale(1.09);
       z-index: 20; }
