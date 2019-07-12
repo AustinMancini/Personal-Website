@@ -168,6 +168,13 @@ body {
     .section-my-work h3 {
       text-align: center;
       font-size: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-my-work h3 {
+      margin: 0 auto; } }
+
+@media only screen and (max-width: 37.5em) {
+  .ux-list-header {
+    padding-right: 7rem; } }
 
 .section-my-work ul {
   font-size: 1.6rem;
@@ -179,10 +186,9 @@ body {
       font-size: 1.9rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-my-work ul {
-      margin: 0 auto;
-      text-align: center;
-      font-size: 2rem;
-      list-style: none; } }
+      text-align: left;
+      font-size: 2.5rem;
+      display: inline-block; } }
 
 /* Get In Touch Button */
 .btn:link,
