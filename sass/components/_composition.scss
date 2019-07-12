@@ -1,0 +1,58 @@
+.composition {
+  position: relative; // set to relative because it is parent of __photo
+
+  @include respond(tab-port) {
+    margin-top: 6rem;
+  }
+
+  &__photo {
+    width: 18.5%;
+
+    @include respond(tab-port) {
+      width: 16.5%;
+    }
+
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+
+    &--p1 {
+      // these values move the img up, down, left or right
+      left: 5rem;
+      top: -0rem;
+    }
+
+    &--p2 {
+      right: 7rem;
+      top: 0rem;
+    }
+
+    &--p3 {
+      left: 4.5rem;
+      top: 15rem;
+    }
+
+    &--p4 {
+      right: 6rem;
+      top: 15rem;
+    }
+
+    &--p5 {
+      right: 23.5rem;
+      top: 0;
+    }
+
+    &--p6 {
+      right: 23.5rem;
+      top: 15rem;
+    }
+
+    /// COMMENTED OUT FOR USE OF AOS JAVASCRIPT
+    &:hover {
+      // use for hover affect of each photo
+      transform: scale(1.09);
+
+      z-index: 20; // brings img forward with higher index value than parent
+    }
+  }
+}

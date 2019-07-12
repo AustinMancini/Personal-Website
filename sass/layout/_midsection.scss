@@ -1,0 +1,22 @@
+.midsection {
+  position: relative; // set to relative because it is parent of __par
+  text-align: center;
+  padding: 10rem 0;
+
+  &__par {
+    &--p1 {
+      font-size: 1.85rem;
+      width: 50%;
+      line-height: 2.5;
+      margin: 0 auto;
+    }
+  }
+}
+
+.midsection .row:not(:last-child) {
+  margin-bottom: 0;
+}
+.midsection h3 {
+  margin-top: 0;
+  font-size: 3rem;
+}
