@@ -10,41 +10,75 @@
 
     @include respond(tab-port) {
       width: 16.5%;
+      margin: 0 auto;
     }
 
     position: absolute;
     z-index: 10;
     transition: all 0.2s;
 
+    // Swift
     &--p1 {
       // these values move the img up, down, left or right
       left: 5rem;
       top: -0rem;
+
+      @include respond(phone) {
+        left: 6rem;
+        top: 0rem;
+      }
     }
 
+    // JavaScript
     &--p2 {
       right: 7rem;
       top: 0rem;
+
+      @include respond(phone) {
+        right: 5rem;
+        top: 0rem;
+      }
     }
 
+    // CSS
     &--p3 {
       left: 4.5rem;
       top: 15rem;
+
+      @include respond(phone) {
+       left: 5.8rem;
+      }
+      
     }
 
+    // SQL
     &--p4 {
       right: 6rem;
       top: 15rem;
+
+      @include respond(phone) {
+        right: 5rem;
+      }
     }
 
+    // Sass
     &--p5 {
       right: 23.5rem;
       top: 0;
+
+      @include respond(phone) {
+        right: 18.45rem;
+      }
     }
 
+    // HTML
     &--p6 {
       right: 23.5rem;
       top: 15rem;
+
+      @include respond(phone) {
+        right: 18.5rem;
+      }
     }
 
     /// COMMENTED OUT FOR USE OF AOS JAVASCRIPT

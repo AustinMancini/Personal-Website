@@ -19,6 +19,20 @@
   @include respond(tab-port) {
     font-size: 3.5rem;
   }
+
+  @include respond(phone) {
+    width: 34rem;
+    text-align: left;
+  }
+}
+
+.about-column-secondary {
+  margin: 11rem 14rem 0 0;
+
+  @include respond(tab-port) {
+    margin: 0 auto;
+    margin-left: 5rem;
+  }
 }
 
 .about-column-secondary p {
@@ -32,6 +46,12 @@
     font-size: 1.95rem;
     margin-bottom: 0;
   }
+
+  @include respond(phone) {
+    width: 35rem;
+    text-align: left;
+    font-size: 2rem;
+  }
 }
 
 .about-column-initial {
@@ -40,15 +60,6 @@
   @include respond(tab-port) {
     margin: 0 auto;
     margin-top: 5.5rem;
-    margin-left: 5rem;
-  }
-}
-
-.about-column-secondary {
-  margin: 11rem 14rem 0 0;
-
-  @include respond(tab-port) {
-    margin: 0 auto;
     margin-left: 5rem;
   }
 }
@@ -66,7 +77,12 @@
   @include respond(tab-port) {
     margin-bottom: 0;
     padding-bottom: 4rem;
-    font-size: 1.95rem;
+    font-size: 2rem;
+  }
+
+  @include respond(phone) {
+    width: 30rem;
+    margin: 0 auto;
   }
 }
 
@@ -83,14 +99,22 @@
     padding-bottom: 0;
     margin-bottom: 3rem;
   }
+
+  @include respond(phone) {
+    padding-left: 7.56rem;
+  }
 }
 
+// Small titles
 .section-my-work h3 {
   font-size: 2rem;
 
   @include respond(tab-port) {
-    margin-left: 13.5rem;
+    text-align: center;
     font-size: 2.5rem;
+  }
+
+  @include respond(phone) {
   }
 }
 
@@ -102,5 +126,12 @@
   @include respond(tab-port) {
     margin-left: 13.5rem;
     font-size: 1.9rem;
+  }
+
+  @include respond(phone) {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    list-style: none;
   }
 }
