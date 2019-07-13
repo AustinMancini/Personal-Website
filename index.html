@@ -15,16 +15,38 @@
 <body>
     <!-- Header -->
     <header id="header" class="alt">
+
+        <!-- Top left logo -->
         <h1>
             <a href="index.html">A.M Technologies</a>
         </h1>
+
+        <!-- Navigation bar -->
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#my-work">Work</a></li>
-                <li><a href="#footerID">Contact</a></li>
-            </ul>
+            <div id="mySidenav" class="sidenav">
+                <ul>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+                    <a href="index.html">
+                        Home
+                    </a>
+                    <a href="#my-work">
+                        Work
+                    </a>
+                    <a href="#footerID">
+                        Contact
+                    </a>
+                </ul>
+            </div>
         </nav>
+        <div id="main">
+            <div onclick="openNav()">
+            <span class="hamburger-menu-style" ></span>
+            <span class="hamburger-menu-style"></span>
+            <span class="hamburger-menu-style"></span>
+            </div>
+        </div>
+
+
     </header>
 
     <!-- Banner -->
@@ -117,26 +139,28 @@
             </div>
 
 
-            <div class="col-1-of-2">
-                <div class="composition">
-                    <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="500"
-                        src="devicon-master/icons/swift/swift-original.svg" alt="Swift"
-                        class="composition__photo composition__photo--p1" />
-                    <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="700"
-                        src="devicon-master/icons/javascript/javascript-original.svg" alt="JavaScript"
-                        class="composition__photo composition__photo--p2" />
-                    <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="800"
-                        src="devicon-master/icons/css3/css3-plain-wordmark.svg" alt="CSS"
-                        class="composition__photo composition__photo--p3" />
-                    <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
-                        src="devicon-master/icons/mysql/mysql-plain.svg" alt="SQL"
-                        class="composition__photo composition__photo--p4" />
-                    <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="600"
-                        src="devicon-master/icons/sass/sass-original.svg" alt="Sass"
-                        class="composition__photo composition__photo--p5" />
-                    <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="800"
-                        src="devicon-master/icons/html5/html5-original-wordmark.svg" alt="HTML"
-                        class="composition__photo composition__photo--p6" />
+            <div class="row">
+                <div class="col-2-of-4">
+                    <div class="composition">
+                        <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="500"
+                            src="devicon-master/icons/swift/swift-original.svg" alt="Swift"
+                            class="composition__photo composition__photo--p1" />
+                        <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="700"
+                            src="devicon-master/icons/javascript/javascript-original.svg" alt="JavaScript"
+                            class="composition__photo composition__photo--p2" />
+                        <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="800"
+                            src="devicon-master/icons/css3/css3-plain-wordmark.svg" alt="CSS"
+                            class="composition__photo composition__photo--p3" />
+                        <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
+                            src="devicon-master/icons/mysql/mysql-plain.svg" alt="SQL"
+                            class="composition__photo composition__photo--p4" />
+                        <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="600"
+                            src="devicon-master/icons/sass/sass-original.svg" alt="Sass"
+                            class="composition__photo composition__photo--p5" />
+                        <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="800"
+                            src="devicon-master/icons/html5/html5-original-wordmark.svg" alt="HTML"
+                            class="composition__photo composition__photo--p6" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,8 +171,8 @@
         <div class="row">
             <h3>I'm currently available for any sort of opportunity.</h3>
             <p class="midsection__par midsection__par--p1">
-               If you have ideas, projects, or a cool idea you'd like to run by me, I'd be more than happy to chat.
-               If you simply fancy saying hey, that works too.
+                If you have ideas, projects, or a cool idea you'd like to run by me, I'd be more than happy to chat.
+                If you simply fancy saying hey, that works too.
             </p>
         </div>
     </div>
@@ -170,6 +194,20 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
     </script>
 </body>
 

@@ -23,7 +23,7 @@
       left: 5rem;
       top: -0rem;
 
-      @include respond(phone) {
+      @include respond(phone-small) {
         left: 5rem;
         top: 0rem;
       }
@@ -34,7 +34,11 @@
       right: 7rem;
       top: 0rem;
 
-      @include respond(phone) {
+      @include respond(phone-large) {
+        right: 5rem;
+      }
+
+      @include respond(phone-small) {
         right: 5rem;
         top: 0rem;
       }
@@ -45,48 +49,67 @@
       left: 4.5rem;
       top: 15rem;
 
-      @include respond(phone) {
-       left: 4.9rem;
+      @include respond(phone-small) {
+        left: 4.9rem;
       }
-      
     }
 
     // SQL
     &--p4 {
-      right: 6rem;
+      right: 7rem;
       top: 15rem;
 
-      @include respond(phone) {
+      @include respond(phone-large) {
+        right: 5rem;
+      }
+
+      @include respond(phone-small) {
         right: 5rem;
       }
     }
 
     // Sass
     &--p5 {
-      right: 23.5rem;
+      right: 22.5rem;
       top: 0;
 
-      @include respond(phone) {
+      @include respond(tab-port) {
+        right: 21.5rem;
+      }
+
+      @include respond(phone-large) {
         right: 19rem;
+      }
+
+      @include respond(phone-small) {
+        right: 17rem;
       }
     }
 
     // HTML
     &--p6 {
-      right: 23.5rem;
+      right: 22.57rem;
       top: 15rem;
 
-      @include respond(phone) {
+      @include respond(tab-port) {
+        right: 21.5rem;
+      }
+
+      @include respond(phone-large) {
         right: 19.5rem;
+      }
+
+      @include respond(phone-small) {
+        right: 17rem;
       }
     }
 
     /// COMMENTED OUT FOR USE OF AOS JAVASCRIPT
-    &:hover {
-      // use for hover affect of each photo
-      transform: scale(1.09);
+    // &:hover {
+    //   // use for hover affect of each photo
+    //   transform: scale(1.09);
 
-      z-index: 20; // brings img forward with higher index value than parent
-    }
+    //   z-index: 20; // brings img forward with higher index value than parent
+    // }
   }
 }

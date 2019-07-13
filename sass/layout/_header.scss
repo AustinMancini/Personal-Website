@@ -1,6 +1,5 @@
 /* Header */
 #header {
-  color: $color-grey-white;
   cursor: default;
   font-size: 1.25rem;
   left: 0;
@@ -10,45 +9,52 @@
   z-index: 10001;
 }
 
-#header h1 {
+#header h1 a {
   margin: 0;
   padding: 0;
   position: absolute;
-}
+  left: 5rem;
+  top: 5.2rem;
+  color: $color-white;
+  font-size: 1.8rem;
 
-#header.alt h1 a:hover {
-  color: $color-grey-lightest;
-  text-shadow: 90%;
+  @include respond(phone-large) {
+    visibility: hidden;
+  }
 }
 
 #header nav {
   position: absolute;
   vertical-align: middle;
+  right: 6rem;
+  top: 3.9rem;
 }
 
-#header nav ul {
-  list-style: none;
+#header nav a {
+  color: $color-white;
+  font-size: 1.8rem;
+
+  @include respond(phone-large) {
+    font-size: 3rem;
+  }
+}
+
+#header nav ul a {
   margin: 0;
-  padding-left: 0;
-}
-
-#header nav ul li {
   border-radius: 4px;
   display: inline-block;
   margin-left: 4rem;
-  padding-left: 0;
+
+  @include respond(phone-large) {
+    margin-left: 0;
+  }
 }
 
-#header nav ul li a {
-  display: inline-block;
-  text-decoration: none;
+#header nav ul a:hover {
+  color: $color-grey-dark;
 }
 
-#header nav ul li a:hover {
-  color: $color-grey-white;
-}
-
-#header.alt {
+.alt {
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -57,39 +63,67 @@
   position: absolute;
 }
 
-#header.alt h1 {
-  left: 5rem;
-  top: 5.2rem;
+.closebtn {
+  visibility: hidden;
 }
 
-#header.alt h1 a {
-  color: $color-white;
-  font-size: 1.8rem;
+.hamburger-menu {
+  visibility: hidden;
 }
 
-#header.alt nav {
-  right: 6rem;
-  top: 5.2rem;
+//
+
+@include respond(phone-large) {
+  .closebtn {
+    visibility: visible;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+  }
+
+  .hamburger-menu-style {
+    visibility: visible;
+    width: 3.5rem;
+    display: block;
+    height: 5px;
+    margin: 6px 0px 0px 0px;
+    background: $color-white;
+    border-radius: 20px;
+    margin-left: 1.5rem;
+    opacity: 0.55;
+  }
 }
-
-#header.alt nav a {
-  color: $color-grey-lightest;
-  font-size: 1.8rem;
-}
-
-#header.alt nav a:active,
-#header.alt nav a:hover {
-  color: $color-white;
-}
-
-// @media screen and (max-width: 980px) {
-//   #header nav a {
-//     padding: 5%;
-//   }
-// }
-
-// @media screen and (max-width: 1280px) {
-//   #header nav a {
-//     padding: 0;
-//   }
-// }
