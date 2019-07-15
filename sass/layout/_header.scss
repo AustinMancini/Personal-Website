@@ -71,12 +71,8 @@
   visibility: hidden;
 }
 
-//
-
+// phone-large nav bar scaling
 @include respond(phone-large) {
-  .closebtn {
-    visibility: visible;
-  }
   .sidenav {
     height: 100%;
     width: 0;
@@ -84,7 +80,8 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #000000;
+    opacity: 0.95;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -105,9 +102,10 @@
 
   .sidenav .closebtn {
     position: absolute;
-    top: 0;
+    top: 1rem;
     right: 25px;
     margin-left: 50px;
+    visibility: visible;
   }
 
   #main {
@@ -123,7 +121,10 @@
     margin: 6px 0px 0px 0px;
     background: $color-white;
     border-radius: 20px;
-    margin-left: 1.5rem;
-    opacity: 0.55;
+    margin-left: 2rem;
+    opacity: 0.45;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
   }
 }

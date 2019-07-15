@@ -320,7 +320,7 @@ body {
           right: 21.5rem; } }
       @media only screen and (max-width: 37.5em) {
         .composition__photo--p6 {
-          right: 19.5rem; } }
+          right: 19rem; } }
       @media only screen and (max-width: 25em) {
         .composition__photo--p6 {
           right: 17rem; } }
@@ -427,8 +427,6 @@ body {
   visibility: hidden; }
 
 @media only screen and (max-width: 37.5em) {
-  .closebtn {
-    visibility: visible; }
   .sidenav {
     height: 100%;
     width: 0;
@@ -436,7 +434,8 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #000000;
+    opacity: 0.95;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px; }
@@ -451,9 +450,10 @@ body {
     color: #f1f1f1; }
   .sidenav .closebtn {
     position: absolute;
-    top: 0;
+    top: 1rem;
     right: 25px;
-    margin-left: 50px; }
+    margin-left: 50px;
+    visibility: visible; }
   #main {
     transition: margin-left 0.5s;
     padding: 16px; }
@@ -465,8 +465,11 @@ body {
     margin: 6px 0px 0px 0px;
     background: #fff;
     border-radius: 20px;
-    margin-left: 1.5rem;
-    opacity: 0.55; } }
+    margin-left: 2rem;
+    opacity: 0.45;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px; } }
 
 /* Banner */
 body.is-touch #banner {
@@ -545,9 +548,17 @@ ul.actions li {
     width: 50%;
     line-height: 2.5;
     margin: 0 auto; }
+    @media only screen and (max-width: 56.25em) {
+      .midsection__par--p1 {
+        width: 95%; } }
     @media only screen and (max-width: 37.5em) {
       .midsection__par--p1 {
-        width: 70%; } }
+        font-size: 2.2rem;
+        width: 75%; } }
+    @media only screen and (max-width: 25em) {
+      .midsection__par--p1 {
+        font-size: 2.2rem;
+        width: 55%; } }
 
 .midsection .row:not(:last-child) {
   margin-bottom: 0; }
@@ -558,15 +569,18 @@ ul.actions li {
   @media only screen and (max-width: 37.5em) {
     .midsection h3 {
       padding: 0 5rem 1rem; } }
+  @media only screen and (max-width: 25em) {
+    .midsection h3 {
+      padding: 0 4rem 1rem; } }
 
 .section-my-work {
   background-color: #fcfcfc;
-  padding: 10rem 0; }
+  padding: 10rem 0;
+  margin: 0 auto; }
   @media only screen and (max-width: 56.25em) {
     .section-my-work {
       padding-bottom: 25rem;
-      margin-bottom: 0;
-      margin: 0 auto; } }
+      margin-bottom: 0; } }
 
 .section-my-work .row {
   padding-bottom: 8rem; }

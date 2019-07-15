@@ -40,13 +40,11 @@
         </nav>
         <div id="main">
             <div onclick="openNav()">
-            <span class="hamburger-menu-style" ></span>
-            <span class="hamburger-menu-style"></span>
-            <span class="hamburger-menu-style"></span>
+                <span class="hamburger-menu-style"></span>
+                <span class="hamburger-menu-style"></span>
+                <span class="hamburger-menu-style"></span>
             </div>
         </div>
-
-
     </header>
 
     <!-- Banner -->
@@ -138,7 +136,6 @@
                 </ul>
             </div>
 
-
             <div class="row">
                 <div class="col-2-of-4">
                     <div class="composition">
@@ -195,20 +192,7 @@
     <script>
         AOS.init();
     </script>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-            document.body.style.backgroundColor = "white";
-        }
-    </script>
+    <script src="js/navigation.js"></script>
 </body>
 
 </html>

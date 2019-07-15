@@ -1,15 +1,14 @@
 .section-my-work {
   background-color: $color-grey-very-light;
   padding: 10rem 0;
+  margin: 0 auto;
 
   @include respond(tab-port) {
     padding-bottom: 25rem;
     margin-bottom: 0;
-    margin: 0 auto;
   }
 }
 
 .section-my-work .row {
-  // space between My Work section on the bottom padding
   padding-bottom: 8rem;
 }
