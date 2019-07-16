@@ -1,5 +1,5 @@
 # Personal-Website
-Personal website build with JS, CSS and Sass. This is still in early development and is not the live version of the site.
+My personal website built centered around scss. This is still in early development and is not the live version of the site.
 
 ## Built With
 *	HTML5
