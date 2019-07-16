@@ -8,7 +8,7 @@ My personal website built centered around scss. This is still in early developme
 *	JS
 
 ## Contributors
-Austin Mancini - Initial work - http://amancini.netlify.com/
+Austin Mancini - *Initial work - http://amancini.netlify.com/
 
 ## Acknowledgments
  Icons
