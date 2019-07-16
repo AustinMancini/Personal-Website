@@ -456,7 +456,7 @@ body {
     visibility: visible; }
   #main {
     transition: margin-left 0.5s;
-    padding: 16px; }
+    padding: 2.7rem; }
   .hamburger-menu-style {
     visibility: visible;
     width: 3.5rem;
@@ -465,11 +465,8 @@ body {
     margin: 6px 0px 0px 0px;
     background: #fff;
     border-radius: 20px;
-    margin-left: 2rem;
-    opacity: 0.45;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 20px; } }
+    margin-left: 0.55rem;
+    opacity: 0.45; } }
 
 /* Banner */
 body.is-touch #banner {

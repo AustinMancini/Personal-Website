@@ -50,7 +50,6 @@
   }
 }
 
-
 #header nav ul a:hover {
   color: $color-grey-light;
 }
@@ -111,7 +110,7 @@
 
   #main {
     transition: margin-left 0.5s;
-    padding: 16px;
+    padding: 2.7rem;
   }
 
   .hamburger-menu-style {
@@ -122,10 +121,7 @@
     margin: 6px 0px 0px 0px;
     background: $color-white;
     border-radius: 20px;
-    margin-left: 2rem;
+    margin-left: 0.55rem;
     opacity: 0.45;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 20px;
   }
 }
