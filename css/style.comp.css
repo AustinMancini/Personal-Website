@@ -155,7 +155,7 @@ body {
   font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.45rem;
+  letter-spacing: 0.35rem;
   padding-bottom: 3.5rem;
   color: #000;
   margin-top: 0; }
@@ -375,7 +375,7 @@ body {
   width: 100%;
   z-index: 10001; }
 
-#header h1 a {
+#header h1 {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -384,7 +384,7 @@ body {
   color: #fff;
   font-size: 1.8rem; }
   @media only screen and (max-width: 37.5em) {
-    #header h1 a {
+    #header h1 {
       visibility: hidden; } }
 
 #header nav {
@@ -410,7 +410,7 @@ body {
       margin-left: 0; } }
 
 #header nav ul a:hover {
-  color: #777; }
+  color: #aaa; }
 
 .alt {
   background-color: transparent;

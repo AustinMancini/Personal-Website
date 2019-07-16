@@ -23,6 +23,7 @@
   "author": "Austin",
   "license": "ISC",
   "dependencies": {
-    "hamburgers": "^1.1.3"
+    "hamburgers": "^1.1.3",
+    "jquery": "^3.4.1"
   }
 }

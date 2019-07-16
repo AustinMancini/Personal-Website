@@ -9,7 +9,7 @@
   z-index: 10001;
 }
 
-#header h1 a {
+#header h1 {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -50,8 +50,9 @@
   }
 }
 
+
 #header nav ul a:hover {
-  color: $color-grey-dark;
+  color: $color-grey-light;
 }
 
 .alt {
