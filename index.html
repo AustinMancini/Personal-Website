@@ -16,28 +16,29 @@
     <!-- Header -->
     <header id="header" class="alt">
 
-        <!-- Top left logo -->
-        <h1>
-            A.M | Tech.
-        </h1>
-
-        <!-- Navigation bar -->
-        <nav>
+        <!-- Navigation -->
+        <nav id="navbar">
             <div id="mySidenav" class="sidenav">
+                <h1>
+                    A.M | Tech.
+                </h1>
                 <ul>
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-                    <a href="index.html">
-                        Home
-                    </a>
-                    <a href="#my-work">
-                        Services
-                    </a>
                     <a href="#footerID">
                         Contact
                     </a>
+                    <a href="#my-services">
+                        Services
+                    </a>
+                    <a href="index.html">
+                        Home
+                    </a>
                 </ul>
+
             </div>
         </nav>
+
+        <!-- Mobile nav menu -->
         <div id="main">
             <div onclick="openNav()">
                 <span class="hamburger-menu-style"></span>
@@ -93,8 +94,8 @@
     </div>
 
 
-    <!--"My Work" section of page -->
-    <section class="section-my-work" id="my-work">
+    <!--"Services" section -->
+    <section class="services" id="my-services">
         <div class="row">
             <div class="col-full">
                 <h1>
@@ -187,13 +188,23 @@
         </ul>
     </footer>
 
+
+
     <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/mobile-nav.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/nav-scroll-hide.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="js/navigation.js"></script>
 
+    <div class="credits">
+        <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by starline -
+            www.freepik.com</a>
+    </div>
+    
 </body>
 
 </html>

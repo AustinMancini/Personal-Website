@@ -65,8 +65,8 @@
   }
 }
 
-// My Work Section font
-.section-my-work p {
+// Services font
+.services p {
   font-size: $default-font-size;
   line-height: 2.5;
   padding-bottom: 4rem;
@@ -92,7 +92,7 @@
   }
 }
 
-.section-my-work h1 {
+.services h1 {
   font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -115,8 +115,7 @@
   }
 }
 
-// Small titles
-.section-my-work h3 {
+.services h3 {
   font-size: 2rem;
 
   @include respond(tab-land) {
@@ -139,7 +138,7 @@
   }
 }
 
-.section-my-work ul {
+.services ul {
   font-size: 1.6rem;
   padding-left: 2rem;
   line-height: 1.5;

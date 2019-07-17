@@ -131,27 +131,27 @@ body {
       margin-top: 5.5rem;
       margin-left: 5rem; } }
 
-.section-my-work p {
+.services p {
   font-size: 1.6rem;
   line-height: 2.5;
   padding-bottom: 4rem; }
-  .section-my-work p:not(:last-child) {
+  .services p:not(:last-child) {
     margin-bottom: 3rem; }
   @media only screen and (max-width: 75em) {
-    .section-my-work p {
+    .services p {
       padding: 0 3rem 2.5rem; } }
   @media only screen and (max-width: 56.25em) {
-    .section-my-work p {
+    .services p {
       margin-bottom: 0;
       padding-bottom: 4rem;
       font-size: 2rem; } }
   @media only screen and (max-width: 37.5em) {
-    .section-my-work p {
+    .services p {
       width: 40rem;
       margin: 0 auto;
       font-size: 2.15rem; } }
 
-.section-my-work h1 {
+.services h1 {
   font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -160,46 +160,46 @@ body {
   color: #000;
   margin-top: 0; }
   @media only screen and (max-width: 75em) {
-    .section-my-work h1 {
+    .services h1 {
       padding: 0 3rem; } }
   @media only screen and (max-width: 56.25em) {
-    .section-my-work h1 {
+    .services h1 {
       padding-bottom: 0;
       margin-bottom: 3rem; } }
   @media only screen and (max-width: 37.5em) {
-    .section-my-work h1 {
+    .services h1 {
       padding-left: 3.5rem; } }
 
-.section-my-work h3 {
+.services h3 {
   font-size: 2rem; }
   @media only screen and (max-width: 75em) {
-    .section-my-work h3 {
+    .services h3 {
       padding: 0 3rem; } }
   @media only screen and (max-width: 56.25em) {
-    .section-my-work h3 {
+    .services h3 {
       text-align: center;
       font-size: 2.5rem; } }
   @media only screen and (max-width: 37.5em) {
-    .section-my-work h3 {
+    .services h3 {
       margin: 0 auto; } }
 
 @media only screen and (max-width: 37.5em) {
   .ux-list-header {
     padding-right: 7rem; } }
 
-.section-my-work ul {
+.services ul {
   font-size: 1.6rem;
   padding-left: 2rem;
   line-height: 1.5; }
   @media only screen and (max-width: 75em) {
-    .section-my-work ul {
+    .services ul {
       padding: 0 5rem; } }
   @media only screen and (max-width: 56.25em) {
-    .section-my-work ul {
+    .services ul {
       margin-left: 13.5rem;
       font-size: 1.9rem; } }
   @media only screen and (max-width: 37.5em) {
-    .section-my-work ul {
+    .services ul {
       text-align: left;
       font-size: 2.5rem;
       display: inline-block; } }
@@ -375,42 +375,41 @@ body {
   width: 100%;
   z-index: 10001; }
 
-#header h1 {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  left: 5rem;
-  top: 5.2rem;
+nav h1 {
+  float: left;
+  display: block;
   color: #fff;
-  font-size: 1.8rem; }
+  padding-left: 3.5rem;
+  font-size: 1.7rem;
+  margin: 1rem 0; }
   @media only screen and (max-width: 37.5em) {
-    #header h1 {
-      visibility: hidden; } }
+    nav h1 {
+      display: none; } }
 
-#header nav {
-  position: absolute;
-  vertical-align: middle;
-  right: 6rem;
-  top: 3.9rem; }
+nav {
+  background-color: #1a1730;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s; }
 
-#header nav a {
-  color: #fff;
-  font-size: 1.8rem; }
-  @media only screen and (max-width: 37.5em) {
-    #header nav a {
-      font-size: 3rem; } }
-
-#header nav ul a {
+nav ul {
   margin: 0;
-  border-radius: 4px;
-  display: inline-block;
-  margin-left: 4rem; }
-  @media only screen and (max-width: 37.5em) {
-    #header nav ul a {
-      margin-left: 0; } }
+  padding-right: 3rem; }
 
-#header nav ul a:hover {
-  color: #aaa; }
+nav a {
+  float: right;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0 2rem;
+  margin: 1rem 0;
+  text-decoration: none;
+  font-size: 1.6rem; }
+
+nav a:hover {
+  color: #f6592c; }
 
 .alt {
   background-color: transparent;
@@ -421,10 +420,10 @@ body {
   position: absolute; }
 
 .closebtn {
-  visibility: hidden; }
+  display: none; }
 
 .hamburger-menu {
-  visibility: hidden; }
+  display: none; }
 
 @media only screen and (max-width: 37.5em) {
   .sidenav {
@@ -434,8 +433,8 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #000000;
-    opacity: 0.95;
+    background-color: #1a1730;
+    opacity: 1;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px; }
@@ -443,15 +442,15 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #fff;
     display: block;
     transition: 0.3s; }
   .sidenav a:hover {
-    color: #f1f1f1; }
+    color: #f6592c; }
   .sidenav .closebtn {
     position: absolute;
-    top: 1rem;
-    right: 25px;
+    top: 0;
+    right: 0.5rem;
     margin-left: 50px;
     visibility: visible; }
   #main {
@@ -486,7 +485,7 @@ ul.actions li {
 #banner {
   padding: 20rem 0 13rem 0;
   background-attachment: fixed;
-  background-image: url("../images/overlay.png"), url("../images/dtvn.jpg");
+  background-image: url("../images/modern.png");
   background-position: center top;
   background-size: cover;
   text-align: center; }
@@ -536,6 +535,10 @@ ul.actions li {
     transform: scale(1.09);
     z-index: 20; }
 
+.credits {
+  font-size: 0.1rem;
+  text-align: left; }
+
 .midsection {
   position: relative;
   text-align: center;
@@ -570,14 +573,14 @@ ul.actions li {
     .midsection h3 {
       padding: 0 4rem 1rem; } }
 
-.section-my-work {
+.services {
   background-color: #fcfcfc;
   padding: 10rem 0;
   margin: 0 auto; }
   @media only screen and (max-width: 56.25em) {
-    .section-my-work {
+    .services {
       padding-bottom: 25rem;
       margin-bottom: 0; } }
 
-.section-my-work .row {
+.services .row {
   padding-bottom: 8rem; }
