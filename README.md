@@ -6,6 +6,7 @@ My personal website built centered around scss. This is still in early developme
 *	CSS
 *	Sass
 *	JS
+* jQuery
 
 ## Contributors
 Austin Mancini - *Initial work* - http://amancini.netlify.com/
@@ -14,3 +15,4 @@ Austin Mancini - *Initial work* - http://amancini.netlify.com/
  Icons
 * [devicon](https://github.com/konpa/devicon/) - Icons
 * [AOS](https://github.com/michalsnik/aos) - Scrolling animations
+* [freepik.com](https://www.freepik.com/free-photos-vectors/background) - Banner image
