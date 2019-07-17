@@ -12,7 +12,6 @@ My personal website built centered around scss. This is still in early developme
 Austin Mancini - *Initial work* - http://amancini.netlify.com/
 
 ## Acknowledgments
- Icons
 * [devicon](https://github.com/konpa/devicon/) - Icons
 * [AOS](https://github.com/michalsnik/aos) - Scrolling animations
 * [freepik.com](https://www.freepik.com/free-photos-vectors/background) - Banner image
