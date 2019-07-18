@@ -21,43 +21,48 @@
     &--p1 {
       // these values move the img up, down, left or right
       left: 5rem;
-      top: -0rem;
+      top: -5rem;
+
+      @include respond(phone-large) {
+        top: -4rem;
+      }
 
       @include respond(phone-small) {
         left: 5rem;
-        top: 0rem;
+        top: -3rem;
       }
     }
 
     // JavaScript
     &--p2 {
       right: 7rem;
-      top: 0rem;
+      top: -5rem;
 
       @include respond(phone-large) {
         right: 5rem;
+        top: -4rem;
       }
 
       @include respond(phone-small) {
         right: 5rem;
-        top: 0rem;
+        top: -3rem;
       }
     }
 
     // CSS
     &--p3 {
       left: 4.5rem;
-      top: 15rem;
+      top: 9.5rem;
 
       @include respond(phone-small) {
         left: 4.9rem;
       }
     }
 
-    // SQL
+    // HTML
     &--p4 {
       right: 7rem;
-      top: 15rem;
+      top: 9.5rem;
 
       @include respond(phone-large) {
         right: 5rem;
@@ -70,33 +75,35 @@
 
     // Sass
     &--p5 {
-      right: 22.5rem;
-      top: 0;
+      right: 22.45rem;
+      top: -5rem;
 
       @include respond(tab-port) {
         right: 21.5rem;
       }
 
       @include respond(phone-large) {
-        right: 19rem;
+        top: -4rem;
+        right: 19.5rem;
       }
 
       @include respond(phone-small) {
         right: 17rem;
+        top: -3rem;
       }
     }
 
-    // HTML
+    // GIT
     &--p6 {
-      right: 22.57rem;
-      top: 15rem;
+      right: 23.25rem;
+      top: 9.5rem;
 
       @include respond(tab-port) {
-        right: 21.5rem;
+        right: 22.25rem;
       }
 
       @include respond(phone-large) {
-        right: 19rem;
+        right: 20rem;
       }
 
       @include respond(phone-small) {

@@ -156,7 +156,6 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.35rem;
-  padding-bottom: 3.5rem;
   color: #000;
   margin-top: 0; }
   @media only screen and (max-width: 75em) {
@@ -190,17 +189,18 @@ body {
 .services ul {
   font-size: 1.6rem;
   padding-left: 2rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  list-style: none;
+  list-style-image: url("../images/forward15.png"); }
   @media only screen and (max-width: 75em) {
     .services ul {
       padding: 0 5rem; } }
   @media only screen and (max-width: 56.25em) {
     .services ul {
-      margin-left: 13.5rem;
+      margin-left: 25%;
       font-size: 1.9rem; } }
   @media only screen and (max-width: 37.5em) {
     .services ul {
-      text-align: left;
       font-size: 2.5rem;
       display: inline-block; } }
 
@@ -270,30 +270,34 @@ body {
         margin: 0 auto; } }
     .composition__photo--p1 {
       left: 5rem;
-      top: -0rem; }
+      top: -5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .composition__photo--p1 {
+          top: -4rem; } }
       @media only screen and (max-width: 25em) {
         .composition__photo--p1 {
           left: 5rem;
-          top: 0rem; } }
+          top: -3rem; } }
     .composition__photo--p2 {
       right: 7rem;
-      top: 0rem; }
+      top: -5rem; }
       @media only screen and (max-width: 37.5em) {
         .composition__photo--p2 {
-          right: 5rem; } }
+          right: 5rem;
+          top: -4rem; } }
       @media only screen and (max-width: 25em) {
         .composition__photo--p2 {
           right: 5rem;
-          top: 0rem; } }
+          top: -3rem; } }
     .composition__photo--p3 {
       left: 4.5rem;
-      top: 15rem; }
+      top: 9.5rem; }
       @media only screen and (max-width: 25em) {
         .composition__photo--p3 {
           left: 4.9rem; } }
     .composition__photo--p4 {
       right: 7rem;
-      top: 15rem; }
+      top: 9.5rem; }
       @media only screen and (max-width: 37.5em) {
         .composition__photo--p4 {
           right: 5rem; } }
@@ -301,26 +305,28 @@ body {
         .composition__photo--p4 {
           right: 5rem; } }
     .composition__photo--p5 {
-      right: 22.5rem;
-      top: 0; }
+      right: 22.45rem;
+      top: -5rem; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p5 {
           right: 21.5rem; } }
       @media only screen and (max-width: 37.5em) {
         .composition__photo--p5 {
-          right: 19rem; } }
+          top: -4rem;
+          right: 19.5rem; } }
       @media only screen and (max-width: 25em) {
         .composition__photo--p5 {
-          right: 17rem; } }
+          right: 17rem;
+          top: -3rem; } }
     .composition__photo--p6 {
-      right: 22.57rem;
-      top: 15rem; }
+      right: 23.25rem;
+      top: 9.5rem; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p6 {
-          right: 21.5rem; } }
+          right: 22.25rem; } }
       @media only screen and (max-width: 37.5em) {
         .composition__photo--p6 {
-          right: 19rem; } }
+          right: 20rem; } }
       @media only screen and (max-width: 25em) {
         .composition__photo--p6 {
           right: 17rem; } }
@@ -547,7 +553,7 @@ ul.actions li {
   text-align: center;
   padding: 10rem 0; }
   .midsection__par--p1 {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
     width: 50%;
     line-height: 2.5;
     margin: 0 auto; }
@@ -578,12 +584,9 @@ ul.actions li {
 
 .services {
   background-color: #fcfcfc;
-  padding: 10rem 0;
+  padding: 5rem 0;
   margin: 0 auto; }
   @media only screen and (max-width: 56.25em) {
     .services {
       padding-bottom: 25rem;
       margin-bottom: 0; } }
-
-.services .row {
-  padding-bottom: 8rem; }

@@ -23,9 +23,9 @@ ul.actions li {
   background-position: center top;
   background-size: cover;
   text-align: center;
-  
+
   @include respond(phone-large) {
-      background-size: percentage($number: 3);
+    background-size: percentage($number: 3);
   }
 }
 
