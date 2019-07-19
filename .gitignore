@@ -82,3 +82,11 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+sass/
+
+images/
+
+devicon-master/
+
+resume/
