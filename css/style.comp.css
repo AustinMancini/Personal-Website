@@ -131,27 +131,27 @@ body {
       margin-top: 5.5rem;
       margin-left: 5rem; } }
 
-.services p {
+.skills p {
   font-size: 1.6rem;
   line-height: 2.5;
   padding-bottom: 4rem; }
-  .services p:not(:last-child) {
+  .skills p:not(:last-child) {
     margin-bottom: 3rem; }
   @media only screen and (max-width: 75em) {
-    .services p {
+    .skills p {
       padding: 0 3rem 2.5rem; } }
   @media only screen and (max-width: 56.25em) {
-    .services p {
+    .skills p {
       margin-bottom: 0;
       padding-bottom: 4rem;
       font-size: 2rem; } }
   @media only screen and (max-width: 37.5em) {
-    .services p {
+    .skills p {
       width: 40rem;
       margin: 0 auto;
       font-size: 2.15rem; } }
 
-.services h1 {
+.skills h1 {
   font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -159,48 +159,48 @@ body {
   color: #000;
   margin-top: 0; }
   @media only screen and (max-width: 75em) {
-    .services h1 {
+    .skills h1 {
       padding: 0 3rem; } }
   @media only screen and (max-width: 56.25em) {
-    .services h1 {
+    .skills h1 {
       padding-bottom: 0;
       margin-bottom: 3rem; } }
   @media only screen and (max-width: 37.5em) {
-    .services h1 {
+    .skills h1 {
       padding-left: 3.5rem; } }
 
-.services h3 {
+.skills h3 {
   font-size: 2rem; }
   @media only screen and (max-width: 75em) {
-    .services h3 {
+    .skills h3 {
       padding: 0 3rem; } }
   @media only screen and (max-width: 56.25em) {
-    .services h3 {
+    .skills h3 {
       text-align: center;
       font-size: 2.5rem; } }
   @media only screen and (max-width: 37.5em) {
-    .services h3 {
+    .skills h3 {
       margin: 0 auto; } }
 
 @media only screen and (max-width: 37.5em) {
   .ux-list-header {
     padding-right: 7rem; } }
 
-.services ul {
+.skills ul {
   font-size: 1.6rem;
   padding-left: 2rem;
   line-height: 1.5;
   list-style: none;
   list-style-image: url("../images/forward15.png"); }
   @media only screen and (max-width: 75em) {
-    .services ul {
+    .skills ul {
       padding: 0 5rem; } }
   @media only screen and (max-width: 56.25em) {
-    .services ul {
+    .skills ul {
       margin-left: 25%;
       font-size: 1.9rem; } }
   @media only screen and (max-width: 37.5em) {
-    .services ul {
+    .skills ul {
       font-size: 2.5rem;
       display: inline-block; } }
 
@@ -582,11 +582,11 @@ ul.actions li {
     .midsection h3 {
       padding: 0 4rem 1rem; } }
 
-.services {
+.skills {
   background-color: #fcfcfc;
   padding: 5rem 0;
   margin: 0 auto; }
   @media only screen and (max-width: 56.25em) {
-    .services {
+    .skills {
       padding-bottom: 25rem;
       margin-bottom: 0; } }
