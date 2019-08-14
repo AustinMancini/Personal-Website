@@ -1,0 +1,57 @@
+/* Get In Touch Button */
+.btn:link,
+.btn:visited {
+  border-radius: 0.5rem;
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  font-size: 2rem;
+  line-height: 1.75;
+  font-weight: 700;
+}
+
+.btn:hover {
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  transform: translateY(-0.3rem);
+}
+
+.btn:active {
+  box-shadow: 0 5px 10px rgba($color-black, 0.2);
+  transform: translateY(-0.1rem);
+}
+
+.btn--color {
+  background-color: $color-bright-red;
+  color: $color-white;
+  /* text-shadow: 1.5px 1.5px rgba($color-black, 0.2); */
+}
+
+.btn::after {
+  border-radius: 10px;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.4s;
+  width: 100%;
+  z-index: -1;
+}
+
+.btn--color::after {
+  background-color: $color-bright-red;
+}
+
+.btn:hover::after {
+  opacity: 0;
+  transform: scaleX(1.4) scaleY(1.6);
+}
+
+.btn--anaimated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}

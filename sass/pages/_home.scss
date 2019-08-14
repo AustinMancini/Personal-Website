@@ -1,0 +1,10 @@
+.skills {
+  background-color: $color-grey-very-light;
+  padding: 5rem 0;
+  margin: 0 auto;
+
+  @include respond(tab-port) {
+    padding-bottom: 25rem;
+    margin-bottom: 0;
+  }
+}
