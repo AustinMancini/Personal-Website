@@ -9,7 +9,7 @@ My personal website built centered around scss. This is not the live version of 
 * jQuery
 
 ## Contributors
-Austin Mancini - *Initial work* - http://amancini.dev/
+Austin Mancini - *Initial work* - https://amancini.netlify.app/
 
 ## Acknowledgments
 * [devicon](https://github.com/konpa/devicon/) - Icons
